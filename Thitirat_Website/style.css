@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(215, 177, 253);
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #1d00bf;
+  }
+  .ler-img img{
+
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    bottom: 20;
+    right: 0;
+    animation-name: moves, spins;
+    animation-duration: 3s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:infinite;
+  }
+  
+   @keyframes moves {
+   0% { left: 0px;
+   }
+    100% { left: 500px;
+   }
+   }
+  
+   @keyframes spins {
+   from {
+   transform: rotate(0deg);
+   }
+   to {
+   transform: rotate(360deg);
+   }
+   }
+  
